@@ -1,0 +1,33 @@
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    z-index: 1;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 2rem;
+        font-size: 1.4rem;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+    }
+
+
+    img {
+        height: 4.5rem;
+        filter: invert(1);
+    }
+}
