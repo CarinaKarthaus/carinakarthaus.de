@@ -1,33 +1,27 @@
-header {
+footer {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    height: 6rem;
+    height: 3rem;
     z-index: 1;
     padding-left: 5rem;
     padding-right: 5rem;
+    background-color: unset;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
 
     a {
-        color: white;
+        margin-left: 1rem;
+        color: rgb(206, 206, 206);
         text-decoration: none;
-        margin-left: 2rem;
-        font-size: 1.4rem;
 
         &:hover {
             color: rgba(255, 255, 255, 0.8);
             font-weight: 500;
         }
-    }
-
-    img {
-        height: 3rem;
-        cursor: pointer;
     }
 
     .darkLinks {
@@ -40,8 +34,12 @@ header {
         }
     }
 }
-.darkHeader {
-    background-color: white;
-    box-shadow: 0px 1px 3px 0 rgba(0,0,0, 0.2);
+
+.darkFooter {
+    background-color: rgb(248, 246, 246);
+    box-shadow: 0 0 1px 0 rgba(0,0,0, 0.2);
+    position: absolute;
+    bottom: 0;
 }
+
 
