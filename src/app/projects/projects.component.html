@@ -3,18 +3,24 @@
 <p>Here's some projects that I have been working on lately:</p>
 
 <div class="project-container">
-    <div class="project">
-        <h2>El Pollo Loco</h2>
+
+    <div *ngFor="let project of projects" class="project" >
+        <h2>{{ project.title }}</h2>
         <div class="project-details">
             <p>
-                A JavaScript-based jump-and-run-game. <br>
-               <button class="btn btn-primary"> <a href="http://carina-karthaus.developerakademie.com/el_pollo_loco/">Try it</a> </button> 
-               <br>
-               <button class="btn btn-primary"> <a href="https://github.com/CarinaKarthaus/el_pollo_loco">See Github repo</a> </button>
+                {{ project.details}} <br>
+                <button class="btn btn-primary"> <a href="{{ project.app_link }}">Try it</a> </button> 
+                <br>
+                <button class="btn btn-primary"> <a href="{{ project.github_link }}">See Github repo</a> </button>
             </p>
-            <img src="assets/img/el_pollo_loco.png" >
+            <a href="{{ project.app_link }}">
+                <img src="assets/img/projects/{{ project.img }}" >
+            </a>
+            <a href="{{ project.app_link }}">
+                <img *ngIf="project.img_mobile !== ''" src="assets/img/projects/{{ project.img_mobile }}" class="mobile-img">
+            </a>
         </div>
-       
     </div>
+    
 
 </div>

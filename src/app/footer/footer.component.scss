@@ -1,3 +1,9 @@
+$color-shadywhite: rgba(255, 255, 255, 0.8);
+$color-gray: rgb(206, 206, 206);
+$color-shadowgray: rgba(0,0,0, 0.2);
+// $color-darkgray: rgba(0, 0, 0, 0.4); 
+$color-black: rgba (0, 0, 0, 0.8);
+
 footer {
     position: absolute;
     bottom: 0;
@@ -15,11 +21,11 @@ footer {
 
     a {
         margin-left: 1rem;
-        color: rgb(206, 206, 206);
+        color: $color-gray;
         text-decoration: none;
 
         &:hover {
-            color: rgba(255, 255, 255, 0.8);
+            color: $color-shadywhite;
             font-weight: 500;
         }
     }
@@ -29,15 +35,15 @@ footer {
             color: black;
 
             &:hover {
-                color: rgba (0, 0, 0, 0.8);
+                color: $color-black;
             }
         }
     }
 }
 
 .darkFooter {
-    background-color: rgb(248, 246, 246);
-    box-shadow: 0 0 1px 0 rgba(0,0,0, 0.2);
+    background-color: $color-gray   ;
+    box-shadow: 0 0 1px 0 $color-shadowgray;
     position: absolute;
     bottom: 0;
 }

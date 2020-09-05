@@ -1,20 +1,59 @@
+$color-shadowgray: rgba(0,0,0, 0.2);
+$color-darkblue: #1e3190e8;
+$color-gray: rgb(206, 206, 206);
+
+
 .project {
     margin: 2rem;
+    margin-top: 4rem;
 
     h2 {
-        border-bottom: 1px solid black;
+        border-bottom: 3px solid black;
     }
-
+    p {
+        margin-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.1rem;
+    }
 
     img {
-        width: 30rem;
+        max-width: 30rem;
+        object-fit: contain;
+        border: 1px solid $color-shadowgray;
+        border-radius: 8px;
+        margin: 1rem 0.5rem;
+        padding: 0.2rem;
+        cursor: pointer;
     }
 }
+.mobile-img {
+    max-height: 15rem;
+}
+
 .project-details {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 0.5rem;
 
     button {
         margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: $color-darkblue;
+        border-color: unset;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+
+        &:hover {
+            font-weight: 500;
+            background-color: $color-gray;
+        }
+    }
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }

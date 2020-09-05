@@ -1,3 +1,9 @@
+// @import 'src\variables.scss';
+
+$color-darkgray: rgba(0, 0, 0, 0.4); 
+$color-coralred: #e55252;
+
+
 .slideshow-container {
     height: 100vh;
     width: 100vw;
@@ -24,7 +30,7 @@
 }
 
 .slideshow-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: $color-darkgray;
     position: absolute;
     top: 0;
     display: flex;
@@ -37,7 +43,7 @@
         padding-left: 1rem;
         color: white;
         font-size:  3rem;
-        border-left: 8px solid #e55252;
+        border-left: 8px solid $color-coralred;
     }
 
 .fadeIn {
