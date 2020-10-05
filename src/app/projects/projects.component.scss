@@ -1,6 +1,6 @@
 $color-shadowgray: rgba(0,0,0, 0.2);
 $color-darkblue: #1e3190e8;
-$color-gray: rgb(206, 206, 206);
+$color-gray: #babdbe;
 
 
 .project {
@@ -38,7 +38,7 @@ $color-gray: rgb(206, 206, 206);
     button {
         margin-top: 1rem;
         padding: 0.5rem 1rem;
-        background-color: $color-darkblue;
+        background-color: #eceff1;
         border-color: unset;
         border-radius: 0.5rem;
         font-size: 1.2rem;
@@ -50,7 +50,7 @@ $color-gray: rgb(206, 206, 206);
     }
 
     a {
-        color: white;
+        color: black;
 
         &:hover {
             text-decoration: none;

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slideshow.component.scss']
 })
 export class SlideshowComponent implements OnInit {
-  images = ['engineering2.jpg', 'macbook.jpg', 'macbook2.jpg', 'teamwork.jpg'];
+  // images = ['engineering2.jpg', 'macbook.jpg', 'macbook2.jpg', 'teamwork.jpg'];
+  images = new Array();
   headlines = ['Engineering & coding perfectly combined',
     'Passion for challenge',
     'Going the extra-mile',
@@ -16,6 +17,11 @@ export class SlideshowComponent implements OnInit {
   showImage = true;
 
   ngOnInit() {
+    this.preload(
+      'engineering2.jpg', 
+      'macbook.jpg', 
+      'macbook2.jpg', 
+      'teamwork.jpg');
     this.updateImage();
   }
 
@@ -31,6 +37,11 @@ export class SlideshowComponent implements OnInit {
     }, 8000);
     
   }
-  
 
+  preload(...args: any[]):void {
+    for (let i = 0; i < args.length; i++) {
+      this.images[i] = new Image();
+      this.images[i].src = './assets/img/' + args[i];
+    }
+  }
 }

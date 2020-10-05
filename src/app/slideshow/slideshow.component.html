@@ -1,6 +1,5 @@
 <div class="slideshow-container">
-    <img *ngIf = "showImage" src="assets/img/{{ images[currentImage] }}" class="img-slideshow">
-</div>
+    <img *ngFor="let image of images; index as i;" [class.opacity-0]="currentImage !== i" src="{{ image.src }}" [class.zoomIn]="currentImage == i" class="img-slideshow">
 
 <div class="slideshow-container slideshow-overlay">
     <p *ngIf = "showImage" class="fadeIn">
